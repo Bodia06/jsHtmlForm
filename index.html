@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script type="module" src="./assets/js/modules/form.js"></script>
+		<title>Form registration</title>
+	</head>
+	<body>
+		<div class="contact-form__container">
+			<h2 class="contact-form__title">Contact form</h2>
+			<p class="contact-form__info">
+				Please fill your information and we'll be sending your order
+			</p>
+			<form action="#" class="contact-form">
+				<!-- contact form user name -->
+				<div class="contact-form__group contact-form__name">
+					<label for="contact-form__name-first" class="contact-from__name-label"
+						>Your name</label
+					>
+					<div class="contact-form__name-inputs">
+						<input
+							type="text"
+							name="user_first_name"
+							id="contact-form__name-first"
+							class="contact-from__name-first-input"
+							placeholder="First name"
+							autofocus
+							required
+						/>
+						<input
+							type="text"
+							name="user_last_name"
+							id="contact-form__name-last"
+							class="contact-form__name-last-input"
+							placeholder="Last name"
+							required
+						/>
+					</div>
+				</div>
+				<!-- contact form user emal -->
+				<div class="contact-form__group contact-form__email">
+					<label for="contact-form__email" class="contact-form__emal-label"
+						>Your email</label
+					>
+					<input
+						type="email"
+						name="user_email"
+						id="contact-form__email"
+						class="contact-form__email-input"
+						placeholder="example@gmail.com"
+						required
+					/>
+				</div>
+				<!-- contact form user phone -->
+				<div class="contact-form__group contact-form__phone">
+					<label
+						for="contact-form__phone-country"
+						class="contact-form__phone-label"
+						>Phone</label
+					>
+					<div class="contact-form__phone-inputs">
+						<input
+							type="tel"
+							name="user_phone_country"
+							id="contact-form__phone-country"
+							class="contact-form__phone-country-input"
+							placeholder="+380"
+							required
+						/>
+						<input
+							type="tel"
+							name="user_phone_mid_number"
+							id="contact-form__phone-mid-number"
+							class="contact-form__phone-mid-number-input"
+							placeholder="000"
+							required
+						/>
+						<input
+							type="tel"
+							name="user_phone_last_number"
+							id="contact-form__phone-last-number"
+							class="contact-form__phone-last-number-input"
+							placeholder="0000"
+							required
+						/>
+					</div>
+				</div>
+				<!-- contact form message subject -->
+				<div class="contact-form__group contact-form__message-subject">
+					<label for="" class="contact-form__message-subject-label"
+						>Message subject*</label
+					>
+					<select
+						name="user_subject"
+						id="id-contact-form__message-subject-select"
+						class="contact-form__message-subject-select"
+					>
+						<option value="other">Other</option>
+						<option value="order">Order Inquiry</option>
+						<option value="support">Technical Support</option>
+						<option value="feedback">Feedback</option>
+						<option value="billing">Billing Question</option>
+					</select>
+				</div>
+				<!-- contact form message -->
+				<div class="contact-form__group contact-form__message">
+					<label for="contact-form__message" class="contact-form__message-label"
+						>Message</label
+					>
+					<textarea
+						name="user_message"
+						id="contact-form__message"
+						class="contact-form__message-textarea"
+						cols="80"
+						rows="5"
+						placeholder="Write information (max 200 words)"
+					></textarea>
+				</div>
+				<!-- contact form button submit -->
+				<div class="conatact-from__group contact-form__btn">
+					<button type="submit" class="contact-form__btn-submit">
+						Send message
+					</button>
+				</div>
+			</form>
+			<div class="card-wrapper"></div>
+		</div>
+	</body>
+</html>
