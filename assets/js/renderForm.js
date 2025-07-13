@@ -49,13 +49,9 @@ function userPhone() {
 	const userPhonePart = document.createElement('p')
 	userPhonePart.classList.add('contact-form__card-user__part')
 
-	const fullPhone =
-		`${phoneCountry.value}${phoneMid.value}${phoneLast.value}`.replace(
-			/\s+/g,
-			''
-		)
-
-	userPhonePart.textContent = `Phone number: ${fullPhone}`
+	const fullPhone = `${phoneCountry.value.trim()}${phoneMid.value.trim()}${phoneLast.value.trim()}`
+	const resultPhone = fullPhone.trim()
+	userPhonePart.textContent = `Phone number: ${resultPhone}`
 	return userPhonePart
 }
 
