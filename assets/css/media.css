@@ -1,7 +1,6 @@
-@media (max-width: 750px) {
-	.contact-form__group {
+@media (max-width: 600px) {
+	.contact-form__name-inputs,
+	.contact-form__phone-inputs {
 		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
 	}
 }

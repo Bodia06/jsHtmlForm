@@ -1,15 +1,13 @@
 .contact-form__container {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
+	max-width: 800px;
+	margin: 0 auto;
 	background-color: #eec600;
 	color: #ffffff;
-	max-width: 800px;
-	min-width: 450px;
-	width: 100%;
-	transform: translateY(25%);
 	padding: 2rem 1rem;
 	border-radius: 8px;
+	gap: 1.25rem;
 }
 
 .contact-form__title {
@@ -25,62 +23,27 @@
 .contact-form {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
-	justify-content: center;
-	align-items: flex-start;
+	gap: 15px;
 }
 
-.contact-form__group {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 0.625rem;
-}
-
-.contact-form__group label {
-	font-size: 1.0625em;
-	font-weight: 600;
-}
-
-.contact-form__group input {
-	height: 30px;
-	font-size: 1em;
-}
-
-.contact-form__name-inputs {
-	display: flex;
-	max-width: 500px;
-	min-width: 450px;
-	width: 100%;
-	justify-content: space-between;
-	gap: 0.625rem;
-}
-
-.contact-form__name-inputs input {
-	width: calc(450px / 2);
-}
-
-.contact-form__email-input {
-	width: 500px;
-}
-
+.contact-form__name-inputs,
 .contact-form__phone-inputs {
-	width: 500px;
 	display: flex;
-	justify-content: space-between;
-	height: 30px;
-	gap: 0.625rem;
+	gap: 10px;
 }
 
-.contact-form__phone-inputs input {
-	width: calc(300px / 2);
+input,
+select,
+textarea {
+	padding: 10px;
+	width: 100%;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	transition: border-color 0.3s;
+	box-sizing: border-box;
 }
 
 .contact-form__message-subject-select {
-	width: 100%;
-	max-width: 500px;
 	height: 40px;
 	padding: 0 0.75rem;
 	border: 1px solid #ccc;
@@ -96,14 +59,12 @@
 	cursor: pointer;
 }
 
-.contact-form__message {
-	display: flex;
-	align-items: flex-start;
+.valid {
+	border-color: greenyellow;
 }
-.contact-form__message-textarea {
-	max-width: 500px;
-	resize: none;
-	font-size: 1em;
+
+.invalid {
+	border-color: red;
 }
 
 .contact-form__btn {
@@ -126,35 +87,4 @@
 
 .contact-form__btn-submit:hover {
 	transform: scale(1.1);
-}
-
-.valid {
-	border-color: greenyellow;
-}
-
-.invalid {
-	border-color: red;
-}
-
-.contact-form__card-container {
-	margin-top: 2rem;
-	background-color: #fff;
-	color: #333;
-	border: 1px solid #ccc;
-	padding: 1.5rem;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	max-width: 800px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	font-family: inherit;
-}
-
-.contact-form__card-user__name,
-.contact-form__card-user__email,
-.contact-form__card-user__part {
-	font-size: 1em;
-	font-weight: 500;
 }
